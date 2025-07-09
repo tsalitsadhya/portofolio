@@ -1,1 +1,61 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Learnlytics - Student Prediction Platform</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Learnlytics</div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Welcome to Learnlytics</h1>
+  <p>Your personalized learning assistant — powered by predictive analytics and data science</p>
+</section>
+
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card" onclick="showAlert('Student Style Prediction')">Student Style Prediction</div>
+    <div class="card" onclick="showAlert('Grade Forecast')">Grade Forecast</div>
+    <div class="card" onclick="showAlert('Study Partner Recommendations')">Study Partner Recommendations</div>
+    <div class="card" onclick="showAlert('Graduation Forecast')">Graduation Forecast</div>
+  </div>
+</section>
+
+<section id="analytics" class="section">
+  <h2>Analytics Dashboard</h2>
+  <canvas id="analyticsChart" style="max-width:600px;margin:auto;display:block;"></canvas>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:learnlytics@example.com">learnlytics@example.com</a></p>
+  <div class="socials">
+    <a href="#" onclick="showAlert('LinkedIn')">LinkedIn</a>
+    <a href="#" onclick="showAlert('GitHub')">GitHub</a>
+    <a href="#" onclick="showAlert('Instagram')">Instagram</a>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Learnlytics
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
