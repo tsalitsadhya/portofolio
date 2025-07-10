@@ -73,7 +73,6 @@ header {
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #fff;
 }
 
 .hero-text p {
@@ -137,15 +136,15 @@ header {
   box-shadow: 0 0 15px rgba(142, 68, 173, 0.4);
 }
 
-.skill-icon {
-  font-size: 3rem;
-  color: #8e44ad;
+.skill-img {
+  width: 50px;
+  height: 50px;
   margin-bottom: 0.5rem;
+  object-fit: contain;
 }
 
 .skill-card h3 {
   margin: 0.5rem 0;
-  color: #fff;
 }
 
 .skill-card p {
@@ -169,15 +168,6 @@ header {
 .projects-grid div:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
-}
-
-.projects-grid h3 {
-  color: #eee;
-  margin-bottom: 0.5rem;
-}
-
-.projects-grid p {
-  color: #bbb;
 }
 
 form {
@@ -232,28 +222,4 @@ footer {
   color: #aaa;
   font-size: 0.9rem;
   margin-top: 2rem;
-}
-
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 2.4rem;
-  }
-  .hero-image img {
-    max-width: 250px;
-  }
-  .skills-grid, .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 2rem;
-  }
-  .hero-text p {
-    font-size: 1rem;
-  }
-  .btn {
-    padding: 0.5rem 1rem;
-  }
 }
