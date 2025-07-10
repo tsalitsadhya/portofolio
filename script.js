@@ -1,4 +1,3 @@
-// ScrollReveal animations
 ScrollReveal({
   reset: false,
   distance: '50px',
@@ -14,7 +13,6 @@ ScrollReveal().reveal('.projects-grid div', { interval: 200, origin: 'bottom' })
 ScrollReveal().reveal('form', { origin: 'left' });
 ScrollReveal().reveal('.social', { origin: 'right' });
 
-// Highlight nav-link
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
