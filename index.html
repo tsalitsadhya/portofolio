@@ -3,39 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portofolio</title>
+<title>Tsalitsatul Adhya | Portfolio</title>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <div class="logo">Portofolio<span>.</span></div>
+<header class="header">
+  <div class="logo">Tsalitsatul<span>Adhya</span></div>
   <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+      <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+      <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+      <li class="nav-item"><a href="#projects" class="nav-link">Portfolio</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 </header>
 
+<main>
+
 <section id="home" class="hero">
   <div class="hero-text">
     <h1>Tsalitsatul Adhya</h1>
-    <p>
-      Hello! I’m <span class="highlight">Tsalitsatul Adhya</span>, an <span class="highlight">Information Systems</span> student focusing on <span class="highlight">Data Science</span> and passionate about <span class="highlight">Data Analytics</span>, turning data into impactful insights and stories.
-    </p>
+    <p>Hello! I’m <span class="highlight">Tsalitsatul Adhya</span>, an <span class="highlight">Information Systems</span> student with a passion for <span class="highlight">Data Analytics</span> & <span class="highlight">Data Science</span>.</p>
+    <a href="#contact" class="btn">Hire Me</a>
   </div>
   <div class="hero-image">
-    <img id="illustration" src="student.jpg" alt="Student Illustration">
+    <img src="student.jpg" alt="Student Photo">
   </div>
 </section>
 
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>I’m a student at [Your University], exploring the power of data to make informed decisions. I love uncovering patterns, solving business problems, and telling meaningful stories through data visualization & analysis.</p>
+  <a href="cv/cv.pdf" class="btn" download>Download CV</a>
+</section>
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div><h3>Python</h3><p>Intermediate</p></div>
+    <div><h3>SQL</h3><p>Intermediate</p></div>
+    <div><h3>Tableau</h3><p>Intermediate</p></div>
+    <div><h3>Data Visualization</h3><p>Advanced</p></div>
+    <div><h3>Machine Learning</h3><p>Basic</p></div>
+    <div><h3>Excel</h3><p>Advanced</p></div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Portfolio</h2>
+  <div class="projects-grid">
+    <div><h3>Sales Dashboard</h3><p>Created an interactive sales dashboard using Tableau and Excel.</p></div>
+    <div><h3>Customer Segmentation</h3><p>Segmented customers with K-Means for targeted marketing.</p></div>
+    <div><h3>Churn Prediction</h3><p>Developed a churn prediction model using logistic regression.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Let’s collaborate! Feel free to reach out:</p>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit" class="btn">Send</button>
+  </form>
+
+  <div class="social">
+    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+    <a href="https://github.com/yourprofile" target="_blank"><i class="ri-github-fill"></i></a>
+  </div>
+</section>
+
+</main>
+
 <footer>
-  &copy; 2025 Tsalitsatul Adhya Portofolio
+  &copy; 2025 Tsalitsatul Adhya. All Rights Reserved.
 </footer>
 
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="script.js"></script>
 </body>
 </html>
