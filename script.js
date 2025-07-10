@@ -9,7 +9,7 @@ ScrollReveal().reveal('.hero-text', { origin: 'left' });
 ScrollReveal().reveal('.hero-image', { origin: 'right' });
 ScrollReveal().reveal('#about', { origin: 'bottom' });
 ScrollReveal().reveal('.skills-grid div', { interval: 200, origin: 'bottom' });
-ScrollReveal().reveal('.projects-grid div', { interval: 200, origin: 'bottom' });
+ScrollReveal().reveal('.projects-grid .project-card', { interval: 200, origin: 'bottom' });
 ScrollReveal().reveal('form', { origin: 'left' });
 ScrollReveal().reveal('.social', { origin: 'right' });
 
@@ -29,3 +29,11 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+function openModal(id) {
+  document.getElementById(`modal${id}`).style.display = 'flex';
+}
+
+function closeModal(id) {
+  document.getElementById(`modal${id}`).style.display = 'none';
+}
