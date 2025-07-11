@@ -39,51 +39,31 @@
 <section id="about" class="section">
   <h2>About Me</h2>
   <p>I’m currently studying at President University with a focus on using data-driven approaches to support decision making. My goal is to craft impactful stories from data and contribute to smarter business strategies.</p>
-  <a href="cv/cv.pdf" class="btn" download>Download CV</a>
+  <a href="cv.pdf" class="btn" download>Download CV</a>
 </section>
 
 <section id="skills" class="section">
-  <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card">
-      <img src="python.jpg" alt="Python" class="skill-img">
-      <h3>Python</h3><p>Intermediate</p>
+  <h2>My Skills</h2>
+
+  <div class="skills-group">
+    <h3>Data Science</h3>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="python.jpg" alt="Python" class="skill-img"><h4>Python</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="sql.jpg" alt="SQL" class="skill-img"><h4>SQL</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="powebi.jpg" alt="Power BI" class="skill-img"><h4>Power BI</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="ml.jpg" alt="Machine Learning" class="skill-img"><h4>Machine Learning</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="jupyter.jpg" alt="Jupyter Notebook" class="skill-img"><h4>Jupyter Notebook</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="looker.jpg" alt="Looker" class="skill-img"><h4>Looker Studio</h4><p>Advanced</p></div>
     </div>
-    <div class="skill-card">
-      <img src="sql.jpg" alt="SQL" class="skill-img">
-      <h3>SQL</h3><p>Intermediate</p>
-    </div>
-    <div class="skill-card">
-      <img src="powebi.jpg" alt="Power BI" class="skill-img">
-      <h3>Power BI</h3><p>Intermediate</p>
-    </div>
-    <div class="skill-card">
-      <img src="django.jpg" alt="Django" class="skill-img">
-      <h3>Django</h3><p>Advanced</p>
-    </div>
-    <div class="skill-card">
-      <img src="ml.jpg" alt="Machine Learning" class="skill-img">
-      <h3>Machine Learning</h3><p>Intermediate</p>
-    </div>
-    <div class="skill-card">
-      <img src="excel.jpg" alt="Excel" class="skill-img">
-      <h3>Excel</h3><p>Intermediate</p>
-    </div>
-    <div class="skill-card">
-      <img src="jupyter.jpg" alt="Jupyter" class="skill-img">
-      <h3>Jupyter Notebook</h3><p>Intermediate</p>
-    </div>
-    <div class="skill-card">
-      <img src="orange.jpg" alt="Orange" class="skill-img">
-      <h3>Orange</h3><p>Intermediate</p>
-    </div>
-    <div class="skill-card">
-      <img src="looker.jpg" alt="Looker" class="skill-img">
-      <h3>Google Looker Studio </h3><p>Advanced</p>
-    </div>
-    <div class="skill-card">
-      <img src="php.jpg" alt="php" class="skill-img">
-      <h3>PHP </h3><p>Advanced</p>
+  </div>
+
+  <div class="skills-group">
+    <h3>Others</h3>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="excel.jpg" alt="Excel" class="skill-img"><h4>Excel</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="orange.jpg" alt="Orange" class="skill-img"><h4>Orange</h4><p>Intermediate</p></div>
+      <div class="skill-card"><img src="django.jpg" alt="Django" class="skill-img"><h4>Django</h4><p>Advanced</p></div>
+      <div class="skill-card"><img src="php.jpg" alt="PHP" class="skill-img"><h4>PHP</h4><p>Basic</p></div>
     </div>
   </div>
 </section>
@@ -100,52 +80,49 @@
     <div class="project-card" onclick="openModal(2)">
       <img src="learnlytics2.jpg" alt="Learnlytics">
       <span class="project-category">Data Science</span>
-      <h3> Learnlytics : Student Prediction</h3>
+      <h3>Learnlytics: Student Prediction</h3>
       <p>Random Forest Classifier for prediction of graduation.</p>
     </div>
     <div class="project-card" onclick="openModal(3)">
       <img src="shopping2.jpg" alt="Shopping Analysis">
       <span class="project-category">Association Model</span>
       <h3>Shopping Analysis</h3>
-      <p>Association model for shopping analysis</p>
+      <p>Association model for shopping analysis.</p>
     </div>
-    <div class="project-card" onclick="openModal(3)">
-      <img src="revenue.jpg" alt="Shopping Analysis">
-      <span class="project-category">Revenue Accounting System</span>
-      <h3>Revenue Accounting System </h3>
-      <p>A web-based Revenue Accounting System for Total Buah, automating the retail revenue cycle.</p>
+    <div class="project-card" onclick="openModal(4)">
+      <img src="revenue.jpg" alt="Revenue Accounting">
+      <span class="project-category">Web System</span>
+      <h3>Revenue Accounting System</h3>
+      <p>Web-based system automating the retail revenue cycle.</p>
     </div>
-    <div class="project-card" onclick="openModal(3)">
+    <div class="project-card" onclick="openModal(5)">
       <img src="supermarket.jpg" alt="Supermarket Analysis">
       <span class="project-category">Data Visualization</span>
-      <h3>Supermarket Analysis Dashboard </h3>
-      <p>Dashboard Analysis using Excel .</p>
+      <h3>Supermarket Dashboard</h3>
+      <p>Dashboard analysis using Excel.</p>
     </div>
   </div>
 </section>
 
+<!-- Modals -->
 <div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal(1)">&times;</span>
-    <h3>Sales Performance Dashboard</h3>
-    <p>Developed an interactive Power BI dashboard to track sales KPIs, visualize trends, and empower decision-makers with real-time analytics.</p>
-  </div>
+  <div class="modal-content"><span class="close" onclick="closeModal(1)">&times;</span><h3>Sales Performance Dashboard</h3><p>Developed an interactive Power BI dashboard to track sales KPIs, visualize trends, and empower decision-makers with real-time analytics.</p></div>
 </div>
 
 <div id="modal2" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal(2)">&times;</span>
-    <h3>Customer Segmentation Analysis</h3>
-    <p>Performed K-Means clustering to identify customer segments, enhancing targeted marketing campaigns and increasing customer engagement.</p>
-  </div>
+  <div class="modal-content"><span class="close" onclick="closeModal(2)">&times;</span><h3>Learnlytics: Student Prediction</h3><p>Built a Random Forest Classifier to predict student graduation likelihood based on academic performance and engagement.</p></div>
 </div>
 
 <div id="modal3" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal(3)">&times;</span>
-    <h3>Customer Churn Prediction</h3>
-    <p>Created a logistic regression model in Python to predict churn probability and help implement proactive retention strategies for at-risk customers.</p>
-  </div>
+  <div class="modal-content"><span class="close" onclick="closeModal(3)">&times;</span><h3>Shopping Analysis</h3><p>Applied association rule mining to discover customer shopping patterns and improve product placement strategies.</p></div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content"><span class="close" onclick="closeModal(4)">&times;</span><h3>Revenue Accounting System</h3><p>Developed a web-based system automating revenue tracking and reporting for retail business.</p></div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content"><span class="close" onclick="closeModal(5)">&times;</span><h3>Supermarket Dashboard</h3><p>Created an Excel dashboard to analyze supermarket performance, visualize KPIs, and identify trends.</p></div>
 </div>
 
 <section id="contact" class="section">
