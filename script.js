@@ -93,7 +93,7 @@ function handleModalClick(e, id) {
 
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 7; i++) {
       const m = document.getElementById(`modal${i}`);
       if (m && m.style.display === 'flex') closeModal(i);
     }
